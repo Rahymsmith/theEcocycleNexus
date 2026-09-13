@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --soil:#2B2318;
+  --soil-2:#3D3324;
+  --biogas:#4C7A50;
+  --biogas-deep:#345838;
+  --harvest:#C69214;
+  --parchment:#F1EBDA;
+  --parchment-2:#E7DFC8;
+  --ash:#726A57;
+  --clay-line:#D8CDAE;
+  --danger:#A34432;
+}
+html,body{background:var(--parchment); color:var(--soil); font-family:'Work Sans',sans-serif;}
+.font-display{font-family:'Fraunces',serif;}
+.font-mono{font-family:'Space Mono',monospace;}
+::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-thumb{background:var(--clay-line);border-radius:4px;}
+.divider{border-color:var(--clay-line);}
+@keyframes riseIn{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+.rise{ animation: riseIn .35s ease-out; }
+.stat-blob{ border-radius: 62% 38% 55% 45% / 45% 55% 45% 55%; }
+input:focus, select:focus, textarea:focus, button:focus-visible{ outline:2px solid var(--biogas); outline-offset:2px; }
